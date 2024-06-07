@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c0b0b;
+  margin: 0;
+  padding: 20px;
+}
+
+input[type="search"],
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #04458a;
+}
+
+.timer {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie card styles */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.movie-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.comment {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comment input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.comment button {
+  padding: 10px;
+}
+
+.comment p {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+/* Rating section */
+.rating {
+  margin-top: 10px;
+}
+
+.rating span {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffd700;
+}
+
+/* Elapsed time section */
+#elapsed-timer-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
