@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <input type="search" id="search-input" placeholder="Search your movie ..." />
+  <div class="timer-section" id="timer-section">
+    <h3>Set a timer to pick a movie:</h3>
+    <input type="number" id="movie-pick-timer" placeholder="Enter minutes" />
+    <button id="start-timer">Start Timer</button>
+    <p id="timer-message"></p>
+  </div>
+  <div class="timer-section" id="elapsed-timer-section">
+    <h3>Time spent on the page:</h3>
+    <p id="elapsed-time">0 seconds</p>
+  </div>
+  
+  <div class="controls">
+    <div class="dropdown">
+      <button class="dropdown-button">Sort By</button>
+      <div class="dropdown-content" id="sort-options">
+        <button data-sort="title">Title</button>
+        <button data-sort="genre">Genre</button>
+        <button data-sort="director">Director</button>
+        <button data-sort="time">Time</button>
+        <button data-sort="price">Price</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button">Filter By</button>
+      <div class="dropdown-content" id="filter-options">
+        <button data-filter="lessThan3Hours">Less than 3 hours</button>
+        <button data-filter="moreThan3Hours">More than 3 hours</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="movie-list"></div>
+  <script src="movie-app.js"></script>
+</body>
+</html>
